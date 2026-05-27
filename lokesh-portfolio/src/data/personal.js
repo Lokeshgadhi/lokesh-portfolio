@@ -1,0 +1,78 @@
+export const personalData = {
+  name: 'Lokesh Kumar G',
+  tagline: 'Building systems today for the freedom of tomorrow.',
+  // avatar: '/avatar.jpg', // Place your profile pic in public/avatar.jpg and uncomment to display
+  identity: [
+    'Software Developer',
+    'AI Automation Builder',
+    'Futuristic Creator',
+    'Disciplined Introvert',
+    'Late-night Builder',
+  ],
+  birth: {
+    date: '29',
+    month: 'January',
+    monthNum: 1,
+    year: '2004',
+    fullDate: '29/01/2004',
+    place: 'Kolamuru, Undi Mandal, West Godavari',
+    state: 'Andhra Pradesh',
+    country: 'India',
+    coordinates: { lat: 16.5667, lng: 81.5167 },
+  },
+  skills: [
+    { name: 'React', category: 'Frontend', color: '#06b6d4' },
+    { name: 'JavaScript', category: 'Language', color: '#fbbf24' },
+    { name: 'Python', category: 'Language', color: '#3b82f6' },
+    { name: 'AI Automation', category: 'Specialty', color: '#a855f7' },
+    { name: 'Discipline', category: 'Mindset', color: '#ec4899' },
+    { name: 'Creativity', category: 'Mindset', color: '#10b981' },
+    { name: 'Ambition', category: 'Mindset', color: '#f97316' },
+    { name: 'Vision', category: 'Mindset', color: '#8b5cf6' },
+  ],
+  lifestyle: [
+    { name: 'Gym Discipline', icon: '💪', description: 'Daily transformation through consistency', image: '/image_4.jpg' },
+    { name: 'Late-Night Coding', icon: '🌙', description: 'The quiet hours where ideas come alive', image: '/image_1.jpg' },
+    { name: 'Bikes & Cars', icon: '🏍️', description: 'Freedom on two and four wheels', image: '/image_2.jpg' },
+    { name: 'Pets', icon: '🐾', description: 'Loyal companions through the journey', image: '/image_8.jpeg' },
+    { name: 'Traveling', icon: '✈️', description: 'Exploring the world, one place at a time', image: '/image_3.jpg' },
+    { name: 'Deep Work', icon: '🎯', description: 'Introverted focus, maximum output', image: '/image_5.jpg' },
+    { name: 'Cricket', icon: '🏏', description: 'Strategy and passion on the field', image: '/image_6.jpg' },
+    { name: 'Self-Growth', icon: '📈', description: 'Always becoming the next version', image: '/image_7.jpg' },
+  ],
+  timeline: [
+    { year: '2026', event: 'Started software development career', icon: '💻' },
+    { year: '2026', event: 'Started gym transformation', icon: '💪' },
+    { year: '2026', event: 'Bought first bike', icon: '🏍️' },
+    { year: '2026', event: 'Bought first car', icon: '🚗' },
+    { year: '2026', event: 'Built first webpage', icon: '🌐' },
+  ],
+  projects: [
+    {
+      id: 1,
+      name: 'Aura Interior App',
+      url: 'https://aura-interior-app.vercel.app/',
+      description: 'First webpage project representing the beginning of the development journey.',
+      // image: '/aura-interior.png', // Place image in public/aura-interior.png and uncomment to display
+      tags: ['React', 'Vercel', 'First Project'],
+      type: 'Web Application',
+      gradient: 'from-purple-600 via-pink-500 to-blue-500',
+    },
+    {
+      id: 2,
+      name: 'AdLogix',
+      url: 'https://adlogix.onrender.com/login',
+      description: 'A digital platform representing the start of software development and automation building.',
+      // image: '/adlogix.png', // Place image in public/adlogix.png and uncomment to display
+      tags: ['React', 'Automation', 'Dashboard'],
+      type: 'SaaS Platform',
+      gradient: 'from-cyan-500 via-blue-500 to-purple-600',
+    },
+  ],
+  vision: [
+    'Financial Freedom',
+    'Luxury Lifestyle',
+    'Travel The World',
+  ],
+  finalQuote: 'This is only the beginning.',
+};
