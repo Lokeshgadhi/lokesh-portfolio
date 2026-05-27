@@ -139,10 +139,10 @@ export default function LifestyleSection() {
                   </div>
 
                   {/* Description */}
-                  <p className="font-mono text-sm text-white/70 leading-relaxed bg-cyan-950/10 p-4 rounded-none border border-cyan-500/15 relative">
+                  <div className="font-mono text-sm text-white/70 leading-relaxed bg-cyan-950/10 p-4 rounded-none border border-cyan-500/15 relative">
                     <div className="absolute top-0 left-0 w-1 h-1 border-t border-l border-cyan-400/30" />
                     {activeItem.description}
-                  </p>
+                  </div>
                 </div>
               </div>
 

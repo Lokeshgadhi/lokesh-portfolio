@@ -123,6 +123,7 @@ export default function NeuralBrainSection() {
               fill="none"
               stroke="rgba(6, 182, 212, 0.5)"
               strokeWidth="0.2"
+              initial={{ r: 5, opacity: 0.5 }}
               animate={{
                 r: [5, 8, 5],
                 opacity: [0.5, 0, 0.5],
@@ -136,6 +137,7 @@ export default function NeuralBrainSection() {
               fill="none"
               stroke="rgba(168, 85, 247, 0.5)"
               strokeWidth="0.2"
+              initial={{ r: 5, opacity: 0.5 }}
               animate={{
                 r: [5, 10, 5],
                 opacity: [0.5, 0, 0.5],
@@ -176,6 +178,7 @@ export default function NeuralBrainSection() {
                   cy={node.y}
                   r="1.5"
                   fill={node.color}
+                  initial={{ r: 1.5, opacity: 0.6 }}
                   animate={{
                     r: [1.5, 3, 1.5],
                     opacity: [0.6, 0, 0.6],

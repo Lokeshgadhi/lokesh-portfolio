@@ -4,7 +4,17 @@
       "PowerShell(npm run *)",
       "Skill(superpowers:brainstorming)",
       "Bash(npm run *)",
-      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)"
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(Start-Sleep -Seconds 5)",
+      "Bash(Get-Content \"C:\\\\Users\\\\lokes\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-lokes-OneDrive-Desktop-lokesh-portfolio\\\\46b0839e-ecb6-4214-aaf6-b4549a078ea1\\\\tasks\\\\bea8afjbk.output\" -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Content *)",
+      "PowerShell(Get-Process *)",
+      "Bash(npm install *)",
+      "Bash(Get-Content \"C:\\\\Users\\\\lokes\\\\AppData\\\\Local\\\\Temp\\\\claude\\\\C--Users-lokes-OneDrive-Desktop-lokesh-portfolio\\\\dc7df512-094e-4e94-af11-34e34d22b3d6\\\\tasks\\\\buczysz0w.output\" -Tail 20)",
+      "PowerShell(npm *)",
+      "PowerShell(yarn *)",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -TimeoutSec 5 -UseBasicParsing; \"Status: $\\($r.StatusCode\\)\" } catch { \"Not reachable: $_\" })",
+      "PowerShell(try { $r = Invoke-WebRequest -Uri \"http://localhost:3000\" -TimeoutSec 8 -UseBasicParsing; \"HTTP $\\($r.StatusCode\\)\" } catch { \"Error: $_\" })"
     ]
   }
 }
