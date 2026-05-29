@@ -19,11 +19,8 @@ export default function VisionSection() {
   // Glitch text hook
   const visionHeader = useGlitchText('LAYER_05 // FINAL_TRANSMISSION', 25, 8);
 
-  const contactDetails = [
-    { label: 'EMAIL', value: 'lokesh.kumar.g.dev@gmail.com', icon: Mail, href: 'mailto:lokesh.kumar.g.dev@gmail.com' },
-    { label: 'GITHUB', value: 'github.com/lokeshkumar-g', icon: Github, href: 'https://github.com/lokeshkumar-g' },
-    { label: 'LINKEDIN', value: 'linkedin.com/in/lokesh-kumar-g', icon: Linkedin, href: 'https://www.linkedin.com/in/lokesh-kumar-g' },
-  ];
+  const iconMap = { EMAIL: Mail, GITHUB: Github, LINKEDIN: Linkedin };
+  const contactDetails = personalData.contact.map((c) => ({ ...c, icon: iconMap[c.label] ?? Mail }));
 
   const handleCopy = (text, label) => {
     navigator.clipboard.writeText(text);

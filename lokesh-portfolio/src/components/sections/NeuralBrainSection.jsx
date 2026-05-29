@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useMemo } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { personalData } from '@/data/personal';
 
@@ -22,15 +22,24 @@ export default function NeuralBrainSection() {
     };
   });
 
-  // Generate connections
-  const connections = [];
-  for (let i = 0; i < nodes.length; i++) {
-    for (let j = i + 1; j < nodes.length; j++) {
-      if (Math.random() > 0.5) {
-        connections.push({ from: nodes[i], to: nodes[j], id: `${i}-${j}` });
+  // Seeded pseudo-random so server and client produce identical connections
+  const connections = useMemo(() => {
+    let seed = 42;
+    const rand = () => {
+      seed = (seed * 1664525 + 1013904223) & 0xffffffff;
+      return (seed >>> 0) / 0xffffffff;
+    };
+    const result = [];
+    for (let i = 0; i < nodes.length; i++) {
+      for (let j = i + 1; j < nodes.length; j++) {
+        if (rand() > 0.5) {
+          result.push({ from: nodes[i], to: nodes[j], id: `${i}-${j}` });
+        }
       }
     }
-  }
+    return result;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <section id="mind" ref={ref} className="relative w-full py-4 overflow-hidden">
